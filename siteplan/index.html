@@ -10,7 +10,9 @@
   <meta name="title" content="WDD 130 | Julian Sanchez">
   <meta name="description" content="This website is the site plan for the rafting company Dry Oar">
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="./assets/style/index.css">
+  <link rel="stylesheet" href="./style.css">
+  <script src="smoothscroll.js"></script>
+</head>
 
 <body class="bg-gradient-to-r text-indigo-900 from-sky-500 to-indigo-500">
   <div class="grid gap-5 m-5">
@@ -25,7 +27,8 @@
         class="rounded-lg p-5 bg-white text-center drop-shadow-md hover:drop-shadow-lg flex-1">Audience</a>
       <a href="#branding" class="rounded-lg p-5 bg-white text-center drop-shadow-md flex-1">Branding</a>
       <a href="#styleGuide" class="rounded-lg p-5 bg-white text-center drop-shadow-md flex-1">Style Guide</a>
-      <a href="#siteMap" class="rounded-lg p-5 bg-white text-center drop-shadow-md flex-1 col-span-2">Site Map</a>
+      <a href="#siteMap" class="scroll rounded-lg p-5 bg-white text-center drop-shadow-md flex-1 col-span-2">Site
+        Map</a>
     </nav>
 
     <div id="purpose" class="rounded-lg p-5 bg-white text-center drop-shadow-md">
@@ -98,55 +101,21 @@
       </div>
     </div>
   </div>
-  <style>
-    .sitemap {
-      display: grid;
-      justify-content: center;
 
-      grid-template-columns: repeat(6, 15%);
-      grid-template-rows: 3em 1.5em 1.5em 3em;
-      grid-template-areas: ". . home home . ."
-        ". . . top . ."
-        ". left left right right ."
-        "page2 page2 . . page3 page3";
-    }
+  <script>
+    // add event listener on load
+    window.addEventListener('load', function () {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
 
-    .sitemap>div {
-      text-align: center;
-    }
-
-    .sm-home {
-      grid-area: home;
-      line-height: 3em;
-    }
-
-    .sm-page2 {
-      grid-area: page2;
-      line-height: 3em;
-    }
-
-    .sm-page3 {
-      grid-area: page3;
-      line-height: 3em;
-    }
-
-    .top {
-      grid-area: top;
-      border-left: 1px solid;
-    }
-
-    .left {
-      grid-area: left;
-      border-top: 1px solid;
-      border-left: 1px solid;
-    }
-
-    .right {
-      grid-area: right;
-      border-top: 1px solid;
-      border-right: 1px solid;
-    }
-  </style>
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    })
+  </script>
 </body>
 
 </html>
