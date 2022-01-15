@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Julian Cruz Sanchez | WDD 130</title>
+  <!-- General Meta Tags -->
+  <meta name="title" content="WDD 130 | Julian Sanchez">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="./assets/style/index.css">
+</head>
+
+<body class="bg-gradient-to-r text-indigo-900 from-sky-500 to-indigo-500 p-5">
+  <div class="grid gap-5">
+    <header class="inline-block rounded-lg p-2.5 bg-white text-center drop-shadow-md grid grid-cols-3">
+      <span class="font-bold">Dry Oar Site Plan</span>
+      <span class="font-bold">Julian Sanchez</span>
+      <h1 class="font-bold">WDD 130</h1>
+    </header>
+    <nav class="flex gap-5">
+      <div class="rounded-lg p-5 bg-white text-center drop-shadow-md flex-1">Purpose</div>
+      <div class="rounded-lg p-5 bg-white text-center drop-shadow-md hover:drop-shadow-lg flex-1">Audience</div>
+      <div class="rounded-lg p-5 bg-white text-center drop-shadow-md flex-1">Branding</div>
+      <div class="rounded-lg p-5 bg-white text-center drop-shadow-md flex-1">Style Guide</div>
+    </nav>
+
+    <div id="purpose" class="rounded-lg p-5 bg-white text-center drop-shadow-md">
+      <h2 class="text-2xl font-bold">Purpose</h2>
+      <p class="m-2">The purpose of this website is to promote and inform returning and prospecting customers of our
+        services, mission, purpose and to allow them to browse and purchase our tours. We also provide support to
+        customers on this site.</p>
+    </div>
+
+    <div id="purpose" class="rounded-lg p-5 bg-white text-center drop-shadow-md">
+      <h2 class="text-2xl font-bold">Audience</h2>
+      <p class="m-2">This website is targeted at prospective and returning customers of Dry Oar Rafting. This target
+        market consists of outdoorsy middle-class individuals. Most likely adults or families so ages 17-55 is the
+        expected age range.</p>
+    </div>
+
+    <div id="purpose" class="rounded-lg p-5 bg-white text-center drop-shadow-md">
+      <h2 class="text-2xl font-bold">Branding</h2>
+      <img class="m-2 inline-block" src="./logo.png"></p>
+    </div>
+
+    <div id="purpose" class="rounded-lg p-5 bg-white text-center drop-shadow-md">
+      <h2 class="text-2xl font-bold mb-5 block">Style Guide</h2>
+      <div>
+        <span class="text-xl">Colour Pallete</span><br>
+        <span class="text-xs">I'm using Tailwinds' Colours</span>
+        <div class="text-center m-5 grid grid-cols-2 gap-5">
+          <span class="inline-block p-5 bg-indigo-700 rounded-lg text-white">
+            Primary
+          </span>
+          <div class="inline-block p-5 bg-sky-500 rounded-lg text-white">
+            Secondary
+          </div>
+          <span class="inline-block p-5 bg-indigo-500 rounded-lg text-white">
+            Accent 1
+          </span>
+          <div class="inline-block p-5 bg-sky-700 rounded-lg text-white">
+            Accent 2
+          </div>
+        </div>
+
+        <div class="m-5 p-5">
+          <span class="block text-xl mb-5">Paragraph</span>
+          <p>This is how a standard paragraph is styled.</p>
+        </div>
+        <div class="m-5 p-5 text-white bg-indigo-700 rounded-md">
+          <span class="block text-xl mb-5">Coloured Paragraph</span>
+          <p>This is how a coloured paragraph is styled.</p>
+        </div>
+        <div class="m-5">
+          <span class="block text-xl mb-5">Typography</span>
+          <p class="font-sans">Sans font is used in all cases for consistency.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="purpose" class="rounded-lg p-5 bg-white text-center drop-shadow-md">
+      <h2 class="block text-2xl font-bold mb-5">Site Map</h2>
+      <div class="sitemap">
+        <div class="sm-home bg-indigo-700 rounded-lg text-white">Home</div>
+        <div class="sm-page2 bg-sky-500 rounded-lg text-white">
+          [Page2]
+          <!-- this page will have a name later -->
+        </div>
+        <div class="sm-page3 bg-sky-500 rounded-lg text-white">Contact Us</div>
+
+        <div class="top ">&nbsp;</div>
+        <div class="left">&nbsp;</div>
+        <div class="right">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+  <style>
+    .sitemap {
+      display: grid;
+      justify-content: center;
+
+      grid-template-columns: repeat(6, 15%);
+      grid-template-rows: 3em 1.5em 1.5em 3em;
+      grid-template-areas: ". . home home . ."
+        ". . . top . ."
+        ". left left right right ."
+        "page2 page2 . . page3 page3";
+    }
+
+    .sitemap>div {
+      text-align: center;
+    }
+
+    .sm-home {
+      grid-area: home;
+      line-height: 3em;
+    }
+
+    .sm-page2 {
+      grid-area: page2;
+      line-height: 3em;
+    }
+
+    .sm-page3 {
+      grid-area: page3;
+      line-height: 3em;
+    }
+
+    .top {
+      grid-area: top;
+      border-left: 1px solid;
+    }
+
+    .left {
+      grid-area: left;
+      border-top: 1px solid;
+      border-left: 1px solid;
+    }
+
+    .right {
+      grid-area: right;
+      border-top: 1px solid;
+      border-right: 1px solid;
+    }
+  </style>
+</body>
+
+</html>
