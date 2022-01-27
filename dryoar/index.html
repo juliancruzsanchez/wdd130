@@ -9,17 +9,18 @@
   <!-- General Meta Tags -->
   <meta name="title" content="WDD 130 | Julian Sanchez">
   <meta name="description" content="This website is the site plan for the rafting company Dry Oar">
+  <link rel="preload" href="./long-rafting1.png" as="image" />
+  <link rel="preload" href="./long-rafting2.png" as="image" />
+  <link rel="preload" href="/assets/images/logo.png" as="image" />
+  <link rel="preload" href="/assets/images/rafting.png" as="image" />
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="/assets/style/index.css">
   <script src="smoothscroll.js"></script>
 </head>
 
 <body class="bg-gradient-to-r text-indigo-900 from-sky-400 to-indigo-400">
-  <img class="hidden" src="./long-rafting1.png" alt="longrafting" />
-  <img class="hidden" src="./long-rafting2.png" alt="longrafting2" />
-  <img class="hidden" src="/assets/images/logo.png" alt="logo" />
-  <img class="hidden" src="/assets/images/rafting.png" alt="logo_rafting" />
-
+  <img src="/assets/images/logo.png" class="hidden" />
+  <img src="/assets/images/rafting.jpeg" class="hidden" />
 
   <div class="grid gap-5 m-5">
     <header class="headerBlock rounded-lg p-2.5 bg-white text-center drop-shadow-md"></header>
@@ -43,6 +44,7 @@
 
     <div
       class="rounded-lg p-5 text-white bg-indigo-700 text-center drop-shadow-md  bg-no-repeat bg-center bg-cover lg:bg-[url(./long-rafting1.png)]">
+      <img src="./long-rafting1.png" class="hidden" />
       <h2 class="text-2xl font-bold">We Love White Water Rafting</h2>
       <div class="grid grid-cols-2 lg:m-20 lg:grid-cols-1 gap-5 mt-5">
         <div class="center-div">
@@ -59,6 +61,7 @@
 
     <div
       class="rounded-lg p-5 lg:text-black bg-white text-center drop-shadow-md bg-no-repeat bg-center bg-cover lg:bg-[url(./long-rafting2.png)]">
+      <img src="./long-rafting2.png" class="hidden" />
       <h2 class="text-2xl font-bold">We Know You'll Love It Too</h2>
       <div class="grid grid-cols-2 lg:m-20 lg:grid-cols-1 gap-5 mt-5">
         <div class="river-image-1 lg:hidden">
