@@ -1,5 +1,9 @@
+html, body {
+  font-size: 16px;
+}
+
 .profileImage {
-  background-image: url("../images/20978820.jpeg");
+  background-image: url("../images/avatar.jpeg");
 }
 
 html:focus-within {
@@ -70,4 +74,19 @@ html:focus-within {
   text-align: center;
   align-items: center;
   justify-content: center;
+}
+
+.page {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+a {
+  color: rgb(67, 56, 202);
+}
+
+@media (min-width: 768px) {
+  a:visited {
+    color: rgb(49, 46, 129);
+  }
 }
