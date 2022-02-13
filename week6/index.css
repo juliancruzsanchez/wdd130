@@ -1,0 +1,215 @@
+/* WDD 130 Positioning Activity */
+/* Activity 1 Styles */
+.content1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  justify-items: center;
+}
+
+.red1 {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  grid-column: 1/3;
+}
+
+.blue1 {
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+  grid-column: 1/3;
+}
+
+.green1 {
+  width: 200px;
+  height: 200px;
+  background-color: green;
+}
+
+.yellow1 {
+  width: 200px;
+  height: 200px;
+  background-color: gold;
+}
+
+/* Activity 2 Styles */
+.content2 {
+  position: relative;
+}
+
+.red2 {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  float: left;
+  ;
+}
+
+.green2 {
+  width: 100px;
+  position: relative;
+  height: 100px;
+  background-color: green;
+  top: 50px;
+  left: 50px;
+}
+
+.yellow2 {
+  width: 100px;
+  position: relative;
+  height: 100px;
+  background-color: gold;
+  left: 100px;
+}
+
+.blue2 {
+  width: 100px;
+  position: relative;
+  height: 100px;
+  background-color: blue;
+  left: 150px;
+  top: -50px;
+}
+
+.content3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 0px 100px;
+  justify-items: center;
+}
+
+.red3 {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+  grid-column: 1/3;
+}
+
+.green3 {
+  width: 100%;
+  height: 200px;
+  background-color: green;
+}
+
+.yellow3 {
+  width: 100%;
+  height: 200px;
+  background-color: gold;
+}
+
+.blue3 {
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+  grid-column: 1/3;
+}
+
+
+/* Activity 4 Styles */
+.content4 {
+  height: 400px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 350px 350px;
+}
+
+.red4 {
+  background-color: red;
+}
+
+.green4 {
+  background-color: green;
+}
+
+.yellow4 {
+  background-color: gold;
+}
+
+.blue4 {
+  height: 100%;
+  grid-row: 1/4;
+  grid-column: 2;
+  background-color: blue;
+}
+
+/* Activity 5 Styles */
+.content5 {
+  position: relative;
+  grid-template-rows: 1fr 3fr 1fr;
+}
+
+.red5 {
+  width: 100%;
+  height: 100px;
+  background-color: red;
+}
+
+.green5 {
+  float: left;
+  height: 200px;
+  width: 200px;
+  margin: 0px 20px 1px 0px;
+  background-color: green;
+}
+
+.yellow5 {
+  padding: 20px;
+  background-color: gold;
+}
+
+.blue5 {
+  width: 100%;
+  height: 100px;
+  background-color: blue;
+}
+
+/* Activity 6 Styles */
+.content6 {
+  position: relative;
+  display: grid;
+  grid-template-rows: repeat(6, minmax(75px, 1fr));
+  grid-template-columns: repeat(6, 1fr);
+
+}
+
+.red6 {
+  grid-row: 1/3;
+  grid-column: 1/5;
+  background-color: red;
+}
+
+.green6 {
+  background-color: green;
+  grid-column: 1/3;
+  grid-row: 4/7;
+  z-index: 2;
+}
+
+.yellow6 {
+  background-color: gold;
+  grid-column: 5/7;
+  grid-row: 3/7;
+  z-index: 2;
+}
+
+.blue6 {
+  background-color: blue;
+  grid-column: 2/6;
+  grid-row: 2/6;
+}
+
+/* Do not change this container class */
+.activity {
+  width: 600px;
+  margin: 1rem auto;
+  font-family: Arial, sans-serif;
+  border: 1px solid #777;
+  padding: 1rem;
+  clear: both;
+  overflow: auto;
+}
+
+.title {
+  background-color: #ddd;
+}
