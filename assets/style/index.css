@@ -28,10 +28,10 @@ html:focus-within {
 
 }
 
-.page>div:nth-of-type(odd):not(.heroBlock) {
-  background: linear-gradient(90deg, #ffffffc7, transparent);
+#raftingPage .page>div:nth-of-type(odd):not(.heroBlock) {
+  background: linear-gradient(to left, #ffffff0f, #ffffff);
 }
 
-.page>div:nth-of-type(even):not(.heroBlock) {
-  background: linear-gradient(90deg, transparent, #ffffffc7);
+#raftingPage .page>div:nth-of-type(even):not(.heroBlock) {
+  background: linear-gradient(to right, #ffffff0f, #ffffff);
 }
