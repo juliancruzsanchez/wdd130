@@ -1,4 +1,8 @@
-html, body {
+@import url('./components.css');
+@import url('./sitemap.css');
+
+html,
+body {
   font-size: 16px;
 }
 
@@ -10,64 +14,6 @@ html:focus-within {
   scroll-behavior: smooth;
 }
 
-
-.sitemap {
-  display: grid;
-  justify-content: center;
-
-  grid-template-columns: repeat(6, 15%);
-  grid-template-rows: 3em 1.5em 1.5em 3em;
-  grid-template-areas: ". . home home . ."
-    ". . . top . ."
-    ". left left right right ."
-    "page2 page2 . . page3 page3";
-}
-
-.sitemap>div {
-  text-align: center;
-}
-
-.sitemap .sm-home {
-  grid-area: home;
-  line-height: 3em;
-}
-
-.sitemap .sm-page2 {
-  grid-area: page2;
-  line-height: 3em;
-}
-
-.sitemap .sm-page3 {
-  grid-area: page3;
-  line-height: 3em;
-}
-
-.sitemap .top {
-  grid-area: top;
-  border-left: 1px solid;
-}
-
-.sitemap .left {
-  grid-area: left;
-  border-top: 1px solid;
-  border-left: 1px solid;
-}
-
-.sitemap .right {
-  grid-area: right;
-  border-top: 1px solid;
-  border-right: 1px solid;
-}
-
-.headerBlock {
-  background: url(../images/logo.png),linear-gradient(#ffffff5f,#ffffffc0), url(../images/rafting.jpeg);
-  height: 150px;
-  background-size: contain, cover, cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  width: 100%;
-}
-
 .center-div {
   display: flex;
   flex-wrap: wrap;
@@ -77,18 +23,15 @@ html:focus-within {
 }
 
 .page {
-  max-width: 960px;
+  /* max-width: 960px; */
   margin: 0 auto;
+
 }
 
-a {
-  color: rgb(67, 56, 202);
+.page>div:nth-of-type(odd):not(.heroBlock) {
+  background: linear-gradient(90deg, #ffffffc7, transparent);
 }
 
-a:visited {
-  color: rgb(49, 46, 129);
-}
-
-@media (min-width: 768px) {
-
+.page>div:nth-of-type(even):not(.heroBlock) {
+  background: linear-gradient(90deg, transparent, #ffffffc7);
 }

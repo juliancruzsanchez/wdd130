@@ -19,23 +19,33 @@
   <script src="smoothscroll.js"></script>
 </head>
 
-<body class="bg-gradient-to-r text-indigo-900 from-sky-400 to-indigo-400 page">
+<body class="bg-gradient-to-r text-indigo-900 from-sky-400 to-indigo-400 center-div">
   <img src="/assets/images/logo.png" class="hidden" alt="logo" />
   <img src="/assets/images/rafting.jpeg" class="hidden" alt="logo_header_bg" />
 
-  <div class="grid gap-5 m-5">
-    <header class="headerBlock rounded-lg p-2.5 bg-white text-center drop-shadow-md"></header>
-    <nav class="grid md:flex gap-5 grid-cols-2">
-      <a href="./" title="Home" class="rounded-lg p-5 bg-white text-center drop-shadow-md flex-1">Home</a>
+  <main class="grid gap-5 m-5 page">
+    <header class="headerBlock rounded-lg p-2.5 text-center drop-shadow-md block md:hidden"></header>
+    <nav class="grid gap-5 grid-rows-1 grid-cols-1 md:grid-cols-5">
+      <a href="./" title="Home" class="hidden md:grid rounded-lg p-5 text-center drop-shadow-md logoBlock col-span-2">
+        <h1 class="ml-[25%]">Dry Oar Rafting</h1>
+      </a>
       <a href="./" title="The River"
         class="rounded-lg p-5 bg-white text-center drop-shadow-md hover:drop-shadow-lg flex-1">The
         River</a>
       <a href="./" title="Pricing" class="rounded-lg p-5 bg-white text-center drop-shadow-md flex-1">Pricing</a>
       <a href="./" title="About Me" class="rounded-lg p-5 bg-white text-center drop-shadow-md flex-1">About Me</a>
-      <a href="../week2" title="Site Plan"
-        class="scroll rounded-lg p-5 bg-white text-center drop-shadow-md flex-1 col-span-2">Site
-        Plan</a>
     </nav>
+
+    <!-- HERO BLOCK -->
+    <div class="heroBlock rounded-lg p-2.5 text-center drop-shadow-md">
+      <div class="bg-white absolute p-10 grid gap-5 rounded-lg text-indigo-700 top-1/4 left-6 drop-shadow-lg">
+        <h2>Plan Your Next Adventure with Us</h2>
+        <span class="rounded-lg bg-indigo-700 text-center p-2.5 text-white">
+          Book Now
+        </span>
+      </div>
+    </div>
+    <!-- HERO BLOCK END -->
 
     <div class="rounded-lg p-5 bg-white text-center drop-shadow-md">
       <h2 class="text-2xl font-bold">We Love White Water Rafting</h2>
@@ -45,43 +55,47 @@
         the rivers we love.</p>
     </div>
 
-    <div
-      class="rounded-lg p-5 text-white bg-indigo-700 text-center drop-shadow-md  bg-no-repeat bg-center bg-cover lg:bg-[url(/assets/images/long-rafting1.png)]">
-      <img src="/assets/images/long-rafting1.png" class="hidden" alt="big raft" />
-      <h2 class="text-2xl font-bold">We Love White Water Rafting</h2>
-      <div class="grid grid-cols-2 lg:m-20 lg:grid-cols-1 gap-5 mt-5">
-        <div class="center-div">
-          We believe that there is nothing like a river trip for relaxing. That is why we subscribe to the dry oar
-          philosophy of
-          boating. Keeping your oars dry, for us, means taking time to look around and notice the beauty that surrounds
-          the rivers we love. </div>
-        <div class="river-image-1 lg:hidden">
-          <img class="rounded-lg shadow-lg" src="/assets/images/river1.jpeg" alt="Raging River" />
-        </div>
+    <div class="rounded-lg p-5 text-indigo-700 text-center drop-shadow-md">
+      <div class="grid gap-5 grid-cols-2 max-h-[50%]">
+        <img class="rounded-lg" src="/assets/images/long-rafting1.png" alt="big raft" />
 
+        <div class="center-div">
+          <div>
+            <h2 class="text-2xl font-bold">We Love White Water Rafting</h2>
+
+            We believe that there is nothing like a river trip for relaxing. That is why we subscribe to the dry oar
+            philosophy of
+            boating. Keeping your oars dry, for us, means taking time to look around and notice the beauty that
+            surrounds
+            the rivers we love.
+          </div>
+        </div>
       </div>
     </div>
 
-    <div
-      class="rounded-lg p-5 bg-white text-center drop-shadow-md bg-no-repeat bg-center bg-cover lg:bg-[url(/assets/images/long-rafting2.png)]"
-      style="box-shadow:0 0 100px 100px rgba(255, 255, 255, 0.52) inset;">
-      <img src="/assets/images/long-rafting2.png" class="hidden" alt="large-image-of-rafting" />
-      <h2 class="text-2xl font-bold">We Know You'll Love It Too</h2>
-      <div class="grid grid-cols-2 lg:m-20 lg:grid-cols-1 gap-5 mt-5">
-        <div class="river-image-1 lg:hidden">
-          <img class="rounded-lg shadow-lg" src="/assets/images/river2.jpeg" alt="Photo of people rafting on a river" />
-        </div>
+    <div class="rounded-lg p-5 bg-white text-center drop-shadow-md">
+      <div class="grid gap-5 grid-cols-2">
         <div class="center-div">
-          That doesn't mean we don't also like rapids. Opposites in all things after all. We believe that the tenseness
-          that
-          comes when you are looking down the tongue of a big string of waves makes you appreciate the calm beautiful
-          water that always follows even more. </div>
+          <div>
+            <h2 class="text-2xl font-bold">We run whitewater for the rush</h2>
+            <span> That doesn't mean we don't also like rapids. Opposites in all things after all. We believe that the
+              tenseness
+              that
+              comes when you are looking down the tongue of a big string of waves makes you appreciate the calm
+              beautiful
+              water that always follows even more.</span>
+          </div>
+        </div>
+        <img class="rounded-lg shadow-lg" src="/assets/images/long-rafting2.png"
+          alt="Photo of people rafting on a river" />
+
       </div>
     </div>
 
     <div class="rounded-lg p-5 bg-white text-center drop-shadow-md">
       <h2 class="text-2xl font-bold">Come Run With Us</h2>
-      <p class="m-2">We invite you to come relax with us on one of the amazing rivers we visit. Check out our trips and
+      <p class="m-2">We invite you to come relax with us on one of the amazing rivers we visit. Check out our trips
+        and
         let us known
         which one best suits you. We're waiting to hear from you!</p>
     </div>
@@ -100,7 +114,7 @@
         <i class="fa-brands fa-instagram-square fa-xl"></i>
       </div>
     </footer>
-  </div>
+  </main>
 
   <script>
     // add event listener on load

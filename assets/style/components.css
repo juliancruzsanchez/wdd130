@@ -1,0 +1,25 @@
+nav .logoBlock {
+  background: url(../images/logo.png), #ffffff;
+  background-size: contain, cover;
+  background-repeat: no-repeat;
+  background-position: 25%;
+}
+
+.headerBlock {
+  background: url(../images/logo.png), linear-gradient(#ffffff5f, #ffffffc0), url(../images/rafting.jpeg);
+  height: 150px;
+  background-size: contain, cover, cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+}
+
+.heroBlock {
+  background: linear-gradient(#ffffff5f, #ffffffc0), url(../images/rafting.jpeg);
+  height: 300px;
+  background-size: contain, cover, cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  position: relative;
+}
