@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chore App | WDD 130</title>
+  <!-- General Meta Tags -->
+  <meta name="title" content="WDD 130 | Julian Sanchez">
+  <meta name="description" content="This website is the site plan for the rafting company Dry Oar">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/style/index.css">
+  <script src="/assets/scripts/smoothscroll.js"></script>
+</head>
+
+<body class="bg-gradient-to-r text-indigo-900 from-sky-500 to-indigo-500">
+  <div class="grid gap-5 m-5">
+    <header class="inline-block rounded-lg p-2.5 bg-white text-center drop-shadow-md grid grid-cols-3">
+      <span class="font-bold">Chore App Site Plan</span>
+      <a class="font-bold" href="/">Julian Sanchez</a>
+      <h1 class="font-bold">WDD 130</h1>
+    </header>
+    <nav class="grid md:flex gap-5 grid-cols-2">
+      <a href="#purpose" class="rounded-lg p-5 bg-white text-center drop-shadow-md flex-1">Purpose</a>
+      <a href="#audience"
+        class="rounded-lg p-5 bg-white text-center drop-shadow-md hover:drop-shadow-lg flex-1">Audience</a>
+      <a href="#branding" class="rounded-lg p-5 bg-white text-center drop-shadow-md flex-1">Branding</a>
+      <a href="#styleGuide" class="rounded-lg p-5 bg-white text-center drop-shadow-md flex-1">Style Guide</a>
+      <a href="#siteMap" class="scroll rounded-lg p-5 bg-white text-center drop-shadow-md flex-1 col-span-2">Site
+        Map</a>
+    </nav>
+
+    <div id="purpose" class="rounded-lg p-5 bg-white text-center drop-shadow-md">
+      <h2 class="text-2xl font-bold">Purpose</h2>
+      <p class="m-2">Kids hate doing their chores, often leaving parents frustrated with their children.<br> So I've
+        decided
+        to make an app that motivates kids to do their chores with experience based rewards from local businesses.
+      </p>
+    </div>
+
+    <div id="audience" class="rounded-lg p-5 bg-white text-center drop-shadow-md">
+      <h2 class="text-2xl font-bold">Audience</h2>
+      <p class="m-2 pb-2">Two example people who would be in my target market are:
+      <div class="grid grid-cols-2">
+        <div>
+          <ul>
+            <li class="font-bold">Timmy</li>
+            <li>8 years old</li>
+            <li>Hates doing his chores</li>
+            <li>Plays games on his tablet</li>
+          </ul>
+        </div>
+        <div>
+          <ul>
+            <li class="font-bold">Lauren</li>
+            <li>$80,000 Household income</li>
+            <li>Has two kids, 8 year old boy and 5 year old girl</li>
+            <li>Fights with her children about chores</li>
+          </ul>
+        </div>
+      </div>
+      </p>
+    </div>
+
+    <div id="branding" class="rounded-lg p-5 bg-white text-center drop-shadow-md">
+      <h2 class="text-2xl font-bold">Branding</h2>
+      <img class="m-2 inline-block"
+        src="https://uploads-ssl.webflow.com/5e7a7fe8970a06928df7945e/5e7a93d2190cb8822959a33d_Rounded%20logo%20transparent%20(perfect).png"
+        alt="logo"></p>
+    </div>
+
+    <div id="styleGuide" class="rounded-lg p-5 bg-white text-center drop-shadow-md">
+      <h2 class="text-2xl font-bold mb-5 block">Style Guide</h2>
+      <div>
+        <span class="text-xl">Colour Pallete</span><br>
+        <span class="text-xs">I'm using Tailwinds' Colours</span>
+        <div class="text-center m-5 grid grid-cols-2 gap-5">
+          <span class="inline-block p-5 bg-black rounded-lg text-white">
+            Primary
+          </span>
+          <div class="inline-block p-5 bg-gray-800 rounded-lg text-white">
+            Secondary
+          </div>
+          <span class="inline-block p-5 bg-blue-500 rounded-lg text-white">
+            Accent 1
+          </span>
+          <div class="inline-block p-5 bg-indigo-600 rounded-lg text-white">
+            Accent 2
+          </div>
+        </div>
+
+        <div class="m-5 p-5">
+          <span class="block text-xl mb-5">Paragraph</span>
+          <p>This is how a standard paragraph is styled.</p>
+        </div>
+        <div class="m-5 p-5 text-white bg-black rounded-md">
+          <span class="block text-xl mb-5">Coloured Paragraph</span>
+          <p>This is how a coloured paragraph is styled.</p>
+        </div>
+        <div class="m-5">
+          <span class="block text-xl mb-5">Typography</span>
+          <p class="font-sans">Sans font is used in all cases for consistency.</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="siteMap" class="rounded-lg p-5 bg-white text-center drop-shadow-md">
+      <h2 class="block text-2xl font-bold mb-5">Site Map</h2>
+      <div class="sitemap">
+        <div class="sm-home bg-indigo-600 rounded-lg text-white">Root</div>
+        <div class="sm-page2 bg-blue-500 rounded-lg text-white">
+          Parents
+        </div>
+        <div class="sm-page3 bg-blue-500 rounded-lg text-white">Children</div>
+
+        <div class="top ">&nbsp;</div>
+        <div class="left">&nbsp;</div>
+        <div class="right">&nbsp;</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // add event listener on load
+    window.addEventListener('load', function () {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    })
+  </script>
+</body>
+
+</html>
