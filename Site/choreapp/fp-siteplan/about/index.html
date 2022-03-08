@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth center-div">
+
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" href="/favicon.ico">
+  <meta name=”viewport” content=”width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0,
+    maximum-scale=1.0″>
+  <title>Chore App | WDD 130</title>
+  <!-- General Meta Tags -->
+  <meta name="title" content="WDD 130 | Julian Sanchez">
+  <meta name="description" content="This website is the site plan for the rafting company Dry Oar">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/style/index.css">
+  <link rel="stylesheet" href="./assets/style/index.css">
+
+  <script src="/assets/scripts/smoothscroll.js"></script>
+</head>
+
+<body class="bg-gradient-to-r text-indigo-900 from-sky-500 to-indigo-500">
+  <div class="grid gap-5 m-5">
+    <header class="inline-block rounded-lg p-2.5 bg-white text-center drop-shadow-md grid grid-cols-3">
+      <span class="font-bold">Chore App Site Plan</span>
+      <a class="font-bold" href="/">Julian Sanchez</a>
+      <h1 class="font-bold">WDD 130</h1>
+    </header>
+    <nav class="grid md:flex gap-5 grid-cols-2">
+      <a href="../" class="scroll rounded-lg p-5 bg-white text-center drop-shadow-md flex-1">Back To Site
+        Plan</a>
+    </nav>
+
+    <div id="purpose" class="rounded-lg p-5 bg-white drop-shadow-md">
+      <h2 class="text-2xl font-bold">Why Chore Champion?</h2>
+      <div class="m-2">
+        <p>The first benefit of our app is that it helps reduce conflict between parents and children. The app serves as
+          the middleman between the parent and child so that parents don't have to personally confront the child about
+          chores. This is done because instead of the child getting all the chores from their parents, they get their
+          chores from a list in the app. The kids can easily see all the chores they have to do without having to be
+          told by their parents. The app also motivates the child to do the chores instead of having to be from their
+          parents. Every time that the child completes a chore, they are rewarded with points. These points can be
+          redeemed for an allowance, more screen time, or a fun event such as laser tag. These fun prizes would motivate
+          the child to do the chores so that the parent doesn't have to be the bad guy and make them do their chores. By
+          not being the bad guy every day, lots of conflicts will be avoided.</p>
+        <br>
+
+        <p>Another benefit to the app is that it motivates kids to do the chores around the house that never get done.
+          In a lot of houses, there are chores that need to be done, but never do because nobody wants to actually do
+          them. If these chores that never get done are put into the app, and there is an actual reward to do them, then
+          the children will be far more likely to do them. This would be really good for the parents because then all
+          the things that they don&rsquo;t have time to do will finally be done. This is also really good for the kids
+          because, without the app, the kids would probably have to do it anyway, but now they are getting rewards. </p>
+        <br>
+        <p>The
+          last benefit of the app is that it makes chores fun for kids. For young kids, most of their life is fun and
+          play. Even school at a young age is mostly fun. One of the only things that aren't fun is their chores, so
+          they hate them. Chores can cause children to tantrum and put them in a bad mood. Since Chore Champion is so
+          effective in solving this issue it will push kids and parents to continue using the app.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // add event listener on load
+    window.addEventListener('load', function () {
+      document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+          });
+        });
+      });
+    })
+  </script>
+</body>
+
+</html>
