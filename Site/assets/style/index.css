@@ -28,10 +28,23 @@ html:focus-within {
 
 }
 
+#pricingPage .page {
+  max-width: 960px;
+}
+
 #raftingPage .page>div:nth-of-type(odd):not(.heroBlock) {
   background: linear-gradient(to left, #ffffff0f, #ffffff);
 }
 
 #raftingPage .page>div:nth-of-type(even):not(.heroBlock) {
   background: linear-gradient(to right, #ffffff0f, #ffffff);
+}
+
+.dollarSign {
+  line-height: 35px;
+  height: 48px;
+  /* display: inline-block; */
+  font-size: 20px;
+  /* position: relative; */
+  vertical-align: top;
 }
