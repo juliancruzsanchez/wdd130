@@ -9,13 +9,16 @@
 
 <body>
   <script>
-    const queryString = window.location.search;
-    const urlParams = new URLSearchParams(queryString);
-    ["user_email", "user_name", "user_message"].forEach(param => {
-      let text = document.createElement('p')
-      text.innerHTML = `${urlParams.get(param)}`
-      document.getElementById('paramOut').appendChild(text)
-    })
+    function a() {
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      ["user_email", "user_name", "user_message"].forEach(param => {
+        let text = document.createElement('p')
+        text.innerHTML = `<span class="font-bold">${param}:</span><span>${urlParams.get(param)}</span>`
+        document.getElementById('paramOut').appendChild(text)
+      })
+    }
+    setTimeout(a, 500)
   </script>
   <div id="paramOut"></div>
 </body>
