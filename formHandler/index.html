@@ -4,23 +4,33 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Form</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/assets/style/index.css">
+  <link rel="stylesheet" href="./assets/index.css">
 </head>
 
-<body>
-  <script>
-    function a() {
-      const queryString = window.location.search;
-      const urlParams = new URLSearchParams(queryString);
-      ["user_email", "user_name", "user_message"].forEach(param => {
-        let text = document.createElement('p')
-        text.innerHTML = `<span class="font-bold">${param}:</span><span>${urlParams.get(param)}</span>`
-        document.getElementById('paramOut').appendChild(text)
-      })
-    }
-    setTimeout(a, 500)
-  </script>
-  <div id="paramOut"></div>
+<body class="center-div">
+  <div class="center-div page">
+    <script>
+      function a() {
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        ["user_email", "user_name", "user_message"].forEach(param => {
+          let text = document.createElement('p')
+          text.innerHTML = `<span class="font-bold capitalize">${param.replace("_", " ")}:</span> <span>${urlParams.get(param)}</span>`
+          document.getElementById('paramOut').appendChild(text)
+        })
+      }
+      setTimeout(a, 500)
+    </script>
+    <div>
+      <div class="bg-gray-300 p-5 rounded-xl shadow-lg">
+        <h3 class="font-bold pb-2">Params Passed</h3>
+        <div id="paramOut"></div>
+      </div>
+    </div>
+  </div>
 </body>
 
 </html>
