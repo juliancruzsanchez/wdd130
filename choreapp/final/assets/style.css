@@ -1,0 +1,186 @@
+:root {
+  --br: 30px;
+}
+
+.center-div {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+#app>div {
+  height: 100vh;
+  display: grid;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 100%;
+}
+
+.oneui {
+  background: white;
+  overflow: hidden scroll;
+  position: relative;
+  -webkit-overflow-scrolling: touch;
+}
+
+.pageWrapper {
+  color: white;
+  min-height: 100%;
+  position: relative;
+  margin-top: 110px;
+  background: linear-gradient(#696eff, #f8acff);
+  padding: 30px;
+  border-radius: var(--br) var(--br) 0px 0px;
+}
+
+.nameWrapper {
+  position: fixed;
+  width: 100vw;
+  height: 110px;
+  font-size: 32px;
+  font-weight: bold;
+  color: #010101;
+}
+
+.center-div {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.cards {
+  display: grid;
+  grid-gap: 15px;
+}
+
+.card {
+  border-radius: var(--br);
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+  background-color: white;
+  padding: 15px;
+  color: black;
+}
+
+.card.chore {
+  min-height: 125px;
+}
+
+.card.reward {
+  min-height: 250px;
+  ;
+
+}
+
+.card .title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.card .btn-wrap {
+  position: absolute;
+  bottom: 15px;
+  text-align: center;
+  width: calc(100% - 30px);
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 15px;
+}
+
+.btn-wrap> :nth-child(1) {
+  background: rgb(54, 211, 153);
+  color: black;
+  border: none;
+}
+
+.btn-wrap> :nth-child(2) {
+  background: rgb(248, 114, 114);
+  color: rgb(71, 0, 0);
+  border: none;
+}
+
+.btn {
+  width: 100%;
+  color: white;
+  border-radius: 30px;
+}
+
+.navibar-wrapper {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+.navibar {
+  display: grid;
+  height: 60px;
+  grid-template-columns: 1fr 1fr 1fr;
+  background: white;
+  color: black;
+}
+
+.navibar>div {
+  height: 60px;
+}
+
+.icon {
+  display: grid;
+  ;
+  height: 36px;
+  width: 36px;
+}
+
+.icon.icon-settings {
+  background-image: url(../icons/settings.png);
+  background-size: contain;
+}
+
+.icon.icon-home {
+  background-image: url(../icons/home.png);
+  background-size: contain;
+}
+
+.icon.icon-home {
+  background-image: url(../icons/house.png);
+  background-size: contain;
+}
+
+.icon.icon-todo {
+  background-image: url(../icons/todo.png);
+  background-size: contain;
+}
+
+.kidsRewards {}
+
+label {
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea {
+  font: 1.25rem / 1.5 sans-serif;
+  display: block;
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  border-radius: 30px;
+  color: black;
+}
+
+label {
+  padding: 6.25px;
+}
+
+form {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-gap: 15px;
+}

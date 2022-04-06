@@ -1,0 +1,26 @@
+#app > div {
+  height: 100vh;
+  display: grid;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: 100%;
+}
+
+.oneui {
+  background:white;
+overflow: hidden scroll;
+position: relative;
+-webkit-overflow-scrolling: touch;
+}
+
+.pageWrapper {
+ color: white;
+min-height: 100%;
+position: relative;
+margin-top: 110px;
+  background: linear-gradient(#696eff,#f8acff);
+  padding: 30px;
+  border-radius: 30px 30px 0px 0px;
+}
